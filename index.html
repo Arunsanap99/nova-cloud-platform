@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaEngine — The next-generation autonomous cloud workspace for modern development teams. Ship 10x faster with AI-augmented CI/CD, real-time observability, and instant staging.">
+  <meta name="keywords" content="cloud platform, developer tools, DevOps, CI/CD, cloud orchestration, software engineering, AI workspace">
+  <meta name="author" content="NovaEngine Inc.">
+  <meta name="theme-color" content="#06080f">
+  
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:title" content="NovaEngine — The Autonomous Multi-Cloud Operating System">
+  <meta property="og:description" content="Build, preview, and deploy intelligent cloud applications at the speed of thought.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%238b5cf6'/><stop offset='50%' stop-color='%2306b6d4'/><stop offset='100%' stop-color='%23ec4899'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><path d='M28 50 C 35 30, 65 30, 72 50 C 65 70, 35 70, 28 50 Z' fill='none' stroke='white' stroke-width='5'/><circle cx='50' cy='50' r='9' fill='white'/></svg>">
+
+  <title>NovaEngine — The Autonomous Cloud Platform for High-Velocity Teams</title>
+
+  <!-- Google Fonts: Syne (Ultra-modern display) + Space Grotesk (Tech title) + Plus Jakarta Sans + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Radiant Mesh Background & Cyber Beams -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="glow-orb orb-purple"></div>
+    <div class="glow-orb orb-cyan"></div>
+    <div class="glow-orb orb-pink"></div>
+    <div class="light-ray-top"></div>
+    <div class="cyber-grid"></div>
+  </div>
+
+  <!-- ========================================================
+       A. NAVIGATION BAR
+       ======================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="NovaEngine Homepage">
+        <div class="logo-box">
+          <div class="logo-inner-ring"></div>
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+        <span class="logo-text">Nova<span class="text-glow">Engine</span></span>
+        <span class="brand-ver-pill">v3.4</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Overview</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Architecture</a></li>
+          <li class="nav-item"><a href="#stats" class="nav-link">Benchmarks</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Stories</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon theme-toggle" aria-label="Toggle light or dark color theme" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+        </button>
+
+        <!-- CTA Button with Shimmer -->
+        <a href="#pricing" class="btn btn-shimmer nav-cta">
+          <span>Start Deploying</span>
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <!-- ========================================================
+         B. HERO SECTION
+         ======================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Content Column -->
+        <div class="hero-content reveal-up">
+          <!-- Cyber Announcement Pill -->
+          <div class="badge hero-badge">
+            <span class="pulse-radar" aria-hidden="true">
+              <span class="radar-dot"></span>
+              <span class="radar-wave"></span>
+            </span>
+            <span class="badge-text"><strong>NOVA MESH 3.4</strong> · Global Edge Cluster Deployed</span>
+            <span class="badge-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <!-- Hero Main Headline -->
+          <h1 class="hero-title">
+            The Autonomous <br>
+            <span class="text-gradient-radiant">Cloud Operating System</span> <br>
+            for Elite Engineers.
+          </h1>
+
+          <!-- Hero Subtext -->
+          <p class="hero-description">
+            Zero-friction multi-cloud orchestration. Automate microservices, ephemeral preview environments, and predictive latency routing across AWS, GCP, and Azure with one single command.
+          </p>
+
+          <!-- Action Buttons with Radiant Glow -->
+          <div class="hero-buttons">
+            <a href="#pricing" class="btn btn-radiant btn-lg">
+              <span class="btn-text">Start Free 14-Day Trial</span>
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            </a>
+            <a href="#about" class="btn btn-glass btn-lg">
+              <i class="fa-solid fa-circle-play text-cyan" aria-hidden="true"></i>
+              <span>Interactive Architecture</span>
+            </a>
+          </div>
+
+          <!-- Social Proof & Live Metrics Pill -->
+          <div class="trust-indicator">
+            <div class="avatar-stack" aria-label="Customer avatars">
+              <span class="avatar-item av-1" title="Senior Infrastructure Lead at Stripe"></span>
+              <span class="avatar-item av-2" title="Principal Architect at Linear"></span>
+              <span class="avatar-item av-3" title="VP Engineering at Supabase"></span>
+              <span class="avatar-item av-4" title="DevOps Director at Vercel"></span>
+              <span class="avatar-item av-count">+14k</span>
+            </div>
+            <div class="trust-text">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-score">4.98 / 5.0</span>
+              </div>
+              <p>Trusted by <strong>14,200+</strong> cloud architects & technical founders</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Graphic: Futuristic Interactive Terminal Mockup -->
+        <div class="hero-visual reveal-scale">
+          <div class="cyber-mockup">
+            <!-- Glass Header with Live Region Ping -->
+            <div class="mockup-header">
+              <div class="window-controls">
+                <span class="control-dot dot-close"></span>
+                <span class="control-dot dot-min"></span>
+                <span class="control-dot dot-expand"></span>
+              </div>
+              <!-- Code Switcher Tabs -->
+              <div class="code-tabs" role="tablist">
+                <button class="code-tab active" data-lang="ts" role="tab" aria-selected="true">
+                  <i class="fa-brands fa-js c-yellow"></i> cluster.ts
+                </button>
+                <button class="code-tab" data-lang="py" role="tab" aria-selected="false">
+                  <i class="fa-brands fa-python c-blue"></i> mesh.py
+                </button>
+                <button class="code-tab" data-lang="sh" role="tab" aria-selected="false">
+                  <i class="fa-solid fa-terminal c-green"></i> deploy.sh
+                </button>
+              </div>
+              <div class="live-cluster-badge">
+                <span class="ping-dot"></span>
+                <span>GLOBAL MESH · 0.4ms</span>
+              </div>
+            </div>
+
+            <!-- Code Interior & Copy Action -->
+            <div class="mockup-body">
+              <button class="copy-code-btn" id="copy-code-btn" title="Copy code snippet" aria-label="Copy code">
+                <i class="fa-regular fa-copy"></i>
+                <span class="copy-tooltip">Copy</span>
+              </button>
+
+              <pre class="code-editor"><code id="code-display" class="code-content"><span class="c-comment">// Initialize Autonomous Multi-Cloud Cluster</span>
+<span class="c-purple">import</span> { <span class="c-cyan">NovaMesh</span>, <span class="c-cyan">ZeroTrust</span> } <span class="c-purple">from</span> <span class="c-green">'@nova/engine'</span>;
+
+<span class="c-purple">const</span> cluster = <span class="c-purple">await</span> <span class="c-cyan">NovaMesh</span>.<span class="c-yellow">orchestrate</span>({
+  regions: [<span class="c-green">'us-east-1'</span>, <span class="c-green">'eu-central-1'</span>, <span class="c-green">'ap-south-1'</span>],
+  failover: <span class="c-blue">true</span>,        <span class="c-comment">// Zero-downtime multi-cloud swap</span>
+  spotArbitrage: <span class="c-blue">true</span>,   <span class="c-comment">// Dynamic -45% cost reduction</span>
+  security: <span class="c-cyan">ZeroTrust</span>.<span class="c-yellow">mTLS</span>({ autoRotate: <span class="c-blue">true</span> })
+});
+
+<span class="c-comment">// Instant global deployment in 1.48s</span>
+<span class="c-purple">await</span> cluster.<span class="c-yellow">deployPreview</span>({ branch: <span class="c-green">'feat/quantum-speed'</span> });</code></pre>
+
+              <!-- Live Telemetry Stream Bar -->
+              <div class="terminal-footer">
+                <div class="stat-pill">
+                  <span class="stat-pill-label">P99 LATENCY</span>
+                  <span class="stat-pill-val text-cyan">2.4 ms</span>
+                  <div class="sparkline-bar"><div class="sparkline-fill" style="width: 94%"></div></div>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-pill-label">ZERO COLD-START</span>
+                  <span class="stat-pill-val text-green">100.0%</span>
+                  <div class="sparkline-bar"><div class="sparkline-fill" style="width: 100%"></div></div>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-pill-label">COMPUTE ARBITRAGE</span>
+                  <span class="stat-pill-val text-pink">-48.2%</span>
+                  <div class="sparkline-bar"><div class="sparkline-fill" style="width: 78%"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Cybernetic Badges -->
+            <div class="orbit-badge badge-top-right">
+              <div class="orbit-icon icon-purple"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <div class="orbit-title">Zero-Trust mTLS</div>
+                <div class="orbit-desc">Hardware-isolated micro-VMs</div>
+              </div>
+            </div>
+
+            <div class="orbit-badge badge-bottom-left">
+              <div class="orbit-icon icon-cyan"><i class="fa-solid fa-network-wired"></i></div>
+              <div>
+                <div class="orbit-title">Instant Reversion</div>
+                <div class="orbit-desc">0ms atomic rollbacks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         C. TRUSTED BY SECTION
+         ======================================================== -->
+    <section class="section trusted-section" aria-label="Trusted Partners">
+      <div class="container">
+        <p class="trusted-caption">POWRED BY NEXT-GEN INFRASTRUCTURE ARCHITECTURES</p>
+        <div class="brand-track-wrapper">
+          <div class="brand-marquee">
+            <div class="brand-item"><i class="fa-solid fa-microchip"></i><span>HYPERSCALE</span></div>
+            <div class="brand-item"><i class="fa-solid fa-network-wired"></i><span>VERTEX.AI</span></div>
+            <div class="brand-item"><i class="fa-solid fa-cubes-stacked"></i><span>SYNAPSE OS</span></div>
+            <div class="brand-item"><i class="fa-solid fa-layer-group"></i><span>LUMINA LABS</span></div>
+            <div class="brand-item"><i class="fa-solid fa-bolt-lightning"></i><span>PULSE TECH</span></div>
+            <div class="brand-item"><i class="fa-solid fa-infinity"></i><span>CHRONOS IO</span></div>
+            <div class="brand-item"><i class="fa-solid fa-atom"></i><span>QUANTUM CLOUD</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         D. FEATURES SECTION (Asymmetric Modern Bento Grid)
+         ======================================================== -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-sparkles"></i> NEXT-GEN PRIMITIVES</span>
+          <h2 class="section-title">Engineered for Teams that Refuse to <span class="text-gradient-radiant">Slow Down</span></h2>
+          <p class="section-subtitle">
+            NovaEngine replaces fragmented scripts, fragile pipelines, and slow CI runs with an intelligent autonomous cloud runtime.
+          </p>
+        </div>
+
+        <!-- Asymmetric Bento Grid -->
+        <div class="bento-grid">
+          <!-- Bento 1: Large Featured Card -->
+          <article class="bento-card bento-span-2 spotlight-card reveal-up" data-delay="100">
+            <div class="spotlight-overlay"></div>
+            <div class="bento-header">
+              <div class="bento-icon-box icon-purple">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <span class="bento-pill">CORE RUNTIME</span>
+            </div>
+            <h3 class="bento-title">Autonomous Multi-Cloud Swapping</h3>
+            <p class="bento-desc">
+              Your containers run simultaneously across AWS, GCP, and Azure. When any region experiences packet loss or high latency, traffic shifts dynamically with zero connection drops.
+            </p>
+            <!-- Visual Multi-Cloud Route Indicator inside Card -->
+            <div class="bento-visual-bar">
+              <div class="cloud-node active"><i class="fa-brands fa-aws"></i><span>AWS us-east-1 (Primary)</span><strong class="text-green">0.8ms</strong></div>
+              <div class="cloud-node active"><i class="fa-brands fa-google"></i><span>GCP europe-west3</span><strong class="text-green">1.2ms</strong></div>
+              <div class="cloud-node active"><i class="fa-brands fa-microsoft"></i><span>Azure central-us</span><strong class="text-green">0.9ms</strong></div>
+            </div>
+          </article>
+
+          <!-- Bento 2: Ephemeral Previews -->
+          <article class="bento-card spotlight-card reveal-up" data-delay="200">
+            <div class="spotlight-overlay"></div>
+            <div class="bento-header">
+              <div class="bento-icon-box icon-cyan">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <span class="bento-pill">DEVELOPER UX</span>
+            </div>
+            <h3 class="bento-title">Ephemeral PR Staging</h3>
+            <p class="bento-desc">
+              Every git branch generates a full microservice replica with isolated databases. Share live URLs with designers and PMs with zero setup.
+            </p>
+            <div class="mini-branch-preview">
+              <span class="git-pill"><i class="fa-solid fa-code-commit"></i> pr-429.staging.nova.app</span>
+              <span class="status-ready text-green"><i class="fa-solid fa-circle-check"></i> Ready in 2.1s</span>
+            </div>
+          </article>
+
+          <!-- Bento 3: AI Telemetry & Observability -->
+          <article class="bento-card spotlight-card reveal-up" data-delay="300">
+            <div class="spotlight-overlay"></div>
+            <div class="bento-header">
+              <div class="bento-icon-box icon-pink">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <span class="bento-pill">OBSERVABILITY</span>
+            </div>
+            <h3 class="bento-title">Predictive AI Telemetry</h3>
+            <p class="bento-desc">
+              Real-time deep diagnostics detect memory leaks, cold-start latency, and slow SQL queries before they impact end users.
+            </p>
+            <div class="telemetry-spark-row">
+              <div class="spark-item">
+                <span>Anomaly Risk</span>
+                <strong class="text-cyan">0.01%</strong>
+              </div>
+              <div class="spark-item">
+                <span>Auto-Healing</span>
+                <strong class="text-green">Armed</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bento 4: Cost Arbitrage Engine -->
+          <article class="bento-card spotlight-card reveal-up" data-delay="400">
+            <div class="spotlight-overlay"></div>
+            <div class="bento-header">
+              <div class="bento-icon-box icon-amber">
+                <i class="fa-solid fa-coins"></i>
+              </div>
+              <span class="bento-pill">FINOPS</span>
+            </div>
+            <h3 class="bento-title">Dynamic Spot Arbitrage</h3>
+            <p class="bento-desc">
+              Stateless workloads automatically route to surplus compute nodes across cloud data centers, saving up to 48% on monthly infrastructure spend.
+            </p>
+            <div class="cost-stat-box">
+              <div class="cost-val text-gradient-radiant">-48.2%</div>
+              <div class="cost-sub">Average Monthly Infrastructure Invoice Reduction</div>
+            </div>
+          </article>
+
+          <!-- Bento 5: Zero-Trust Security Perimeter (Span 2) -->
+          <article class="bento-card bento-span-2 spotlight-card reveal-up" data-delay="500">
+            <div class="spotlight-overlay"></div>
+            <div class="bento-header">
+              <div class="bento-icon-box icon-emerald">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <span class="bento-pill">ENTERPRISE SECURITY</span>
+            </div>
+            <h3 class="bento-title">Hardware-Isolated Micro-VMs with Automatic Mutual TLS</h3>
+            <p class="bento-desc">
+              Every task runs inside cryptographically isolated memory spaces. Automatic secret rotation, SOC2 Type II compliance logs, and ISO 27001 enforcement are activated out-of-the-box.
+            </p>
+            <div class="security-badges-row">
+              <div class="sec-badge"><i class="fa-solid fa-certificate"></i> SOC2 Type II</div>
+              <div class="sec-badge"><i class="fa-solid fa-lock"></i> AES-256-GCM</div>
+              <div class="sec-badge"><i class="fa-solid fa-fingerprint"></i> Zero-Knowledge Keys</div>
+              <div class="sec-badge"><i class="fa-solid fa-shield-halved"></i> HIPAA Compliant</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         E. ABOUT / ARCHITECTURE SECTION
+         ======================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Text Column -->
+          <div class="about-content reveal-left">
+            <span class="section-tag"><i class="fa-solid fa-cubes"></i> THE ARCHITECTURE</span>
+            <h2 class="section-title">Built from First Principles for <span class="text-gradient-radiant">Radical Velocity</span></h2>
+            <p class="about-lead">
+              Traditional cloud management forces developers into hundreds of lines of fragile YAML scripts, confusing VPC topologies, and slow builds.
+            </p>
+            <p class="about-body">
+              NovaEngine abstracts the complexity into a single declarative configuration file. You write business code; NovaEngine guarantees multi-region fault tolerance, cold-start elimination, and automatic database replication.
+            </p>
+
+            <!-- Value checklist -->
+            <ul class="value-list">
+              <li class="value-item">
+                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Native GitOps Deployment Loop</strong>
+                  <p>Push to GitHub, GitLab, or Bitbucket. NovaEngine handles compilation, edge distribution, and smoke tests automatically.</p>
+                </div>
+              </li>
+              <li class="value-item">
+                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Zero-Cold-Start Pre-Warming</strong>
+                  <p>Intelligent traffic predictive models maintain warm micro-VMs around the globe for real 0ms execution latency.</p>
+                </div>
+              </li>
+              <li class="value-item">
+                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Instant Rollbacks with Atomic Reversion</strong>
+                  <p>If an anomaly is detected, instant rollback executes in under 200 milliseconds without losing user sessions.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="about-cta-box">
+              <a href="#pricing" class="btn btn-radiant">
+                <span>Start Free Trial</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <span class="about-cta-note">No credit card required · Full feature access</span>
+            </div>
+          </div>
+
+          <!-- Interactive Visual Card Column -->
+          <div class="about-visual reveal-right">
+            <div class="cyber-diagram-card">
+              <div class="diagram-glass-header">
+                <div class="diagram-pulse-box">
+                  <span class="pulse-ring"></span>
+                  <span class="pulse-center"></span>
+                  <span>ACTIVE REPO WORKSPACE</span>
+                </div>
+                <span class="branch-pill"><i class="fa-solid fa-code-branch"></i> origin/main</span>
+              </div>
+
+              <!-- Interactive Architecture Tree -->
+              <div class="architecture-diagram">
+                <div class="arch-node arch-root">
+                  <div class="node-icon"><i class="fa-brands fa-github"></i></div>
+                  <div class="node-info">
+                    <span class="node-title">git push origin main</span>
+                    <span class="node-meta">Commit #8ef219 · Cryptographically Signed</span>
+                  </div>
+                  <span class="node-badge">WebHook</span>
+                </div>
+
+                <div class="connector-line"></div>
+
+                <div class="arch-node arch-worker">
+                  <div class="node-icon"><i class="fa-solid fa-microchip"></i></div>
+                  <div class="node-info">
+                    <span class="node-title">Nova Engine Build Core</span>
+                    <span class="node-meta">Distributed Wasm matrix compilation</span>
+                  </div>
+                  <span class="node-badge success">Passed (1.4s)</span>
+                </div>
+
+                <div class="connector-line"></div>
+
+                <div class="arch-split">
+                  <div class="arch-node-mini">
+                    <i class="fa-brands fa-aws text-amber"></i>
+                    <span>US-East (AWS)</span>
+                    <strong class="text-green">0.8ms</strong>
+                  </div>
+                  <div class="arch-node-mini">
+                    <i class="fa-brands fa-google text-cyan"></i>
+                    <span>EU-Central (GCP)</span>
+                    <strong class="text-green">1.1ms</strong>
+                  </div>
+                  <div class="arch-node-mini">
+                    <i class="fa-brands fa-microsoft text-purple"></i>
+                    <span>AP-South (Azure)</span>
+                    <strong class="text-green">1.4ms</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Event Log -->
+              <div class="live-event-box">
+                <div class="event-line">
+                  <i class="fa-solid fa-circle-check text-green"></i>
+                  <span>Zero-downtime swap verified for <strong>production-api</strong></span>
+                </div>
+                <div class="event-line">
+                  <i class="fa-solid fa-shield-halved text-cyan"></i>
+                  <span>Encrypted TLS certificates refreshed on 18 edge zones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         F. STATISTICS SECTION
+         ======================================================== -->
+    <section class="section stats-section" id="stats" aria-label="Key Performance Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card spotlight-card reveal-up" data-delay="100">
+            <div class="spotlight-overlay"></div>
+            <div class="stat-icon icon-purple"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="99.99" data-decimals="2">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <h3 class="stat-title">Platform Uptime SLA</h3>
+            <p class="stat-desc">Guaranteed financial-backed uptime across all global regions</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card spotlight-card reveal-up" data-delay="200">
+            <div class="spotlight-overlay"></div>
+            <div class="stat-icon icon-cyan"><i class="fa-solid fa-cubes"></i></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="850" data-decimals="0">0</span>
+              <span class="stat-suffix">M+</span>
+            </div>
+            <h3 class="stat-title">Monthly Edge Requests</h3>
+            <p class="stat-desc">Ultra-low latency packet routing with zero buffer drops</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card spotlight-card reveal-up" data-delay="300">
+            <div class="spotlight-overlay"></div>
+            <div class="stat-icon icon-pink"><i class="fa-solid fa-stopwatch"></i></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="1.4" data-decimals="1">0</span>
+              <span class="stat-suffix">s</span>
+            </div>
+            <h3 class="stat-title">Average Deployment Time</h3>
+            <p class="stat-desc">From git push to globally active live production endpoint</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card spotlight-card reveal-up" data-delay="400">
+            <div class="spotlight-overlay"></div>
+            <div class="stat-icon icon-emerald"><i class="fa-solid fa-headset"></i></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="24" data-decimals="0">0</span>
+              <span class="stat-suffix">/7</span>
+            </div>
+            <h3 class="stat-title">Dedicated Engineering Ops</h3>
+            <p class="stat-desc">Direct private Slack & Discord bridges to senior core architects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         G. TESTIMONIALS SECTION
+         ======================================================== -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-heart"></i> ENGINEER REVIEWS</span>
+          <h2 class="section-title">Loved by High-Impact <span class="text-gradient-radiant">Architects & CTOs</span></h2>
+          <p class="section-subtitle">
+            See how forward-thinking technical teams cut infrastructure complexity and deliver features weeks ahead of schedule.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card spotlight-card reveal-up" data-delay="100">
+            <div class="spotlight-overlay"></div>
+            <div class="testimonial-stars" aria-label="5 stars rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "NovaEngine eliminated our brittle 2,500-line Kubernetes configuration. Deployments that previously held back our releases now execute globally in under two minutes."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-alex"></div>
+              <div class="author-details">
+                <h4 class="author-name">Alexandre Dubois</h4>
+                <p class="author-role">VP of Engineering at CloudScale</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 (Featured) -->
+          <article class="testimonial-card featured-testimonial spotlight-card reveal-up" data-delay="200">
+            <div class="spotlight-overlay"></div>
+            <div class="featured-badge">Featured Story</div>
+            <div class="testimonial-stars" aria-label="5 stars rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "The automatic ephemeral staging per Pull Request revolutionized our design reviews. Every team member can test features against isolated production mirrors in seconds."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-sophia"></div>
+              <div class="author-details">
+                <h4 class="author-name">Dr. Sophia Ramirez</h4>
+                <p class="author-role">Chief Technology Officer at Synapse Robotics</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card spotlight-card reveal-up" data-delay="300">
+            <div class="spotlight-overlay"></div>
+            <div class="testimonial-stars" aria-label="5 stars rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Our AWS invoice dropped by $22,000 in the first 45 days. The multi-cloud spot arbitrage paid for our annual enterprise subscription in just 10 days."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-marcus"></div>
+              <div class="author-details">
+                <h4 class="author-name">Marcus Vance</h4>
+                <p class="author-role">Principal Systems Architect at StreamForge</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         H. PRICING SECTION
+         ======================================================== -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-tag"></i> TRANSPARENT PRICING</span>
+          <h2 class="section-title">Transparent Value for <span class="text-gradient-radiant">Every Scale</span></h2>
+          <p class="section-subtitle">
+            Zero surprise egress charges. Scale from independent experiments to multi-region enterprise clusters seamlessly.
+          </p>
+
+          <!-- Billing Toggle -->
+          <div class="billing-toggle-container">
+            <span class="billing-label monthly-label active">Monthly Billing</span>
+            <button class="toggle-switch" id="billing-toggle" role="switch" aria-checked="false" aria-label="Toggle annual or monthly billing">
+              <span class="switch-handle"></span>
+            </button>
+            <span class="billing-label annual-label">
+              Annual Billing <span class="discount-pill">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- 3 Tier Pricing Cards Grid -->
+        <div class="pricing-grid">
+          <!-- Plan 1: Hobby -->
+          <div class="pricing-card spotlight-card reveal-up" data-delay="100">
+            <div class="spotlight-overlay"></div>
+            <div class="pricing-header">
+              <span class="plan-tag">INDIVIDUAL</span>
+              <h3 class="plan-title">Hobby</h3>
+              <p class="plan-summary">Ideal for open-source maintainers, personal side projects, and prototype apps.</p>
+            </div>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-val" data-monthly="0" data-annual="0">0</span>
+              <span class="period">/ month forever</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check feature-check"></i> Up to 3 active micro-services</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Global edge CDN (100GB/mo)</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Automated SSL certificates</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Community Discord support</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Dedicated VPC isolation</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom SLA guarantee</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">
+              <span>Deploy Free</span>
+            </a>
+          </div>
+
+          <!-- Plan 2: Pro Engine (Featured) -->
+          <div class="pricing-card featured-plan spotlight-card reveal-up" data-delay="200">
+            <div class="spotlight-overlay"></div>
+            <div class="popular-ribbon">RECOMMENDED</div>
+            <div class="pricing-header">
+              <span class="plan-tag tag-primary">HIGH VELOCITY</span>
+              <h3 class="plan-title">Pro Engine</h3>
+              <p class="plan-summary">Engineered for fast-growing startups and scaling engineering organizations.</p>
+            </div>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-val" data-monthly="49" data-annual="39">49</span>
+              <span class="period" id="pro-period">/ user / month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check feature-check"></i> Unlimited micro-deployments</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Ephemeral staging per Pull Request</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 1TB lightning global bandwidth</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Multi-Cloud automated failover</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 99.95% availability SLA</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Priority direct engineering support</li>
+            </ul>
+            <a href="#contact" class="btn btn-radiant btn-block">
+              <span>Start 14-Day Free Trial</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Plan 3: Enterprise -->
+          <div class="pricing-card spotlight-card reveal-up" data-delay="300">
+            <div class="spotlight-overlay"></div>
+            <div class="pricing-header">
+              <span class="plan-tag">CUSTOM MESH</span>
+              <h3 class="plan-title">Enterprise</h3>
+              <p class="plan-summary">Maximum security, custom compliance governance, and dedicated core architects.</p>
+            </div>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-val" data-monthly="199" data-annual="159">199</span>
+              <span class="period" id="ent-period">/ month (starts at)</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check feature-check"></i> Dedicated private bare-metal clusters</li>
+              <li><i class="fa-solid fa-check feature-check"></i> SOC2, HIPAA & ISO audit logs</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 99.99% financially-backed SLA</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Custom VPC peering & BYO-IP</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Dedicated Solutions Architect</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Custom billing & procurement</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">
+              <span>Talk to Enterprise Team</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         I. FAQ SECTION (Accordion)
+         ======================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+          <h2 class="section-title">Answers to Your <span class="text-gradient-radiant">Technical Questions</span></h2>
+          <p class="section-subtitle">
+            Everything you need to know about architecture, migration, data isolation, and pricing.
+          </p>
+        </div>
+
+        <div class="faq-accordion reveal-up">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-btn-1">
+              <span class="faq-title">How does NovaEngine compare with raw AWS, GCP, or Azure services?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" role="region" aria-labelledby="faq-btn-1">
+              <div class="faq-body">
+                NovaEngine does not replace cloud infrastructure; it supercharges it. Instead of managing hundreds of lines of Terraform, complicated VPC subnetting, and Kubernetes ingress rules, NovaEngine acts as an intelligent orchestration layer that automatically deploys, secures, and load-balances your containers across multiple clouds with zero operational toil.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-btn-2">
+              <span class="faq-title">Can I connect my existing GitHub, GitLab, and Bitbucket repositories?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" role="region" aria-labelledby="faq-btn-2">
+              <div class="faq-body">
+                Yes. NovaEngine provides native 1-click OAuth apps for GitHub, GitLab, and self-hosted Git instances. Once linked, any push to your configured branches triggers an automated build and creates zero-latency ephemeral preview links.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-btn-3">
+              <span class="faq-title">How does NovaEngine ensure hardware-level security and data isolation?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" role="region" aria-labelledby="faq-btn-3">
+              <div class="faq-body">
+                Every workload executes in hardware-isolated micro-VMs with dedicated memory spaces and cryptographic access tokens. We are fully SOC2 Type II certified and do not store customer application payloads on shared disks.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-btn-4">
+              <span class="faq-title">What happens if our application traffic surges unexpectedly?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" role="region" aria-labelledby="faq-btn-4">
+              <div class="faq-body">
+                Our global edge mesh detects traffic surges within 50 milliseconds and auto-provisions additional capacity across neighboring cloud zones. We never throttle active customer traffic; automated notifications keep you informed without unexpected downtime.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-btn-5">
+              <span class="faq-title">Can we import our existing Docker containers and Helm charts?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" role="region" aria-labelledby="faq-btn-5">
+              <div class="faq-body">
+                Absolutely. NovaEngine supports any standard Dockerfile, OCI-compliant container image, and docker-compose file. Our automated CLI tool analyzes your existing containers and scaffolds a production-ready Nova manifest in seconds.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-btn-6">
+              <span class="faq-title">Do you offer programs for open-source projects and students?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" role="region" aria-labelledby="faq-btn-6">
+              <div class="faq-body">
+                Yes! We offer 100% free Pro tier grants for approved open-source projects, and a 50% discount for registered students, educators, and registered non-profit organizations. Contact our community desk to apply.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CONTACT & INQUIRY SECTION
+         ======================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card spotlight-card reveal-up">
+          <div class="spotlight-overlay"></div>
+          <div class="contact-grid">
+            <!-- Contact Info Column -->
+            <div class="contact-info">
+              <span class="section-tag"><i class="fa-solid fa-envelope"></i> DIRECT ACCESS</span>
+              <h2 class="contact-title">Let's Discuss Your <span class="text-gradient-radiant">Cloud Architecture</span></h2>
+              <p class="contact-desc">
+                Have specific scaling requirements or require a custom compliance agreement? Our principal architects respond within 45 minutes.
+              </p>
+
+              <div class="info-items">
+                <div class="info-item">
+                  <div class="info-icon icon-purple"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <strong>San Francisco Headquarters</strong>
+                    <p>548 Market St, Suite 3200, San Francisco, CA 94104</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon icon-cyan"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <strong>Principal Architecture Desk</strong>
+                    <p>architecture@novaengine.io</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon icon-emerald"><i class="fa-solid fa-clock"></i></div>
+                  <div>
+                    <strong>Fast SLA Response</strong>
+                    <p>Average response within 45 minutes during global business hours</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form Column -->
+            <div class="contact-form-wrapper">
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Sarah Chen" required autocomplete="name">
+                  </div>
+                  <span class="field-error" id="name-error">Please enter your full name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Work Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="sarah@company.com" required autocomplete="email">
+                  </div>
+                  <span class="field-error" id="email-error">Please enter a valid work email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="company" class="form-label">Company & Team Size</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-building input-icon"></i>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Acme Inc. (50-200 engineers)">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Infrastructure Scope <span class="required">*</span></label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-message input-icon"></i>
+                    <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us about your current stack, clouds, and scaling targets..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error">Please write a brief message (minimum 10 characters)</span>
+                </div>
+
+                <button type="submit" class="btn btn-radiant btn-block submit-btn" id="submit-btn">
+                  <span class="btn-text">Send Priority Message</span>
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  <span class="spinner" aria-hidden="true"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         J. FINAL CALL TO ACTION SECTION
+         ======================================================== -->
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta-card reveal-scale">
+          <div class="cta-cyber-beams" aria-hidden="true"></div>
+          <div class="cta-inner-content">
+            <span class="badge cta-badge"><i class="fa-solid fa-bolt"></i> ZERO VENDOR LOCK-IN</span>
+            <h2 class="final-cta-title">Ready to Experience True Multi-Cloud Autonomy?</h2>
+            <p class="final-cta-subtitle">
+              Deploy your first microservice cluster in 60 seconds with instant multi-region fault tolerance.
+            </p>
+            <div class="final-cta-buttons">
+              <a href="#pricing" class="btn btn-white btn-lg">
+                <span>Start Free 14-Day Trial</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-glass-bright btn-lg">
+                <i class="fa-solid fa-headset"></i>
+                <span>Talk to Principal Architect</span>
+              </a>
+            </div>
+            <p class="cta-footnote">No credit card required · Instant GitHub OAuth · Cancel anytime</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       K. FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- Main Footer Top Row -->
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo" aria-label="NovaEngine Homepage">
+            <div class="logo-box">
+              <div class="logo-inner-ring"></div>
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <span class="logo-text">Nova<span class="text-glow">Engine</span></span>
+          </a>
+          <p class="footer-tagline">
+            Empowering engineering organizations with autonomous multi-cloud infrastructure and zero-latency deployment pipelines.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="NovaEngine on GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="NovaEngine on X Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="NovaEngine on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="NovaEngine on Discord">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links Column 1: Product -->
+        <div class="footer-links-col">
+          <h4 class="col-title">Platform</h4>
+          <ul class="col-list">
+            <li><a href="#features">Autonomous Mesh</a></li>
+            <li><a href="#features">Ephemeral Staging</a></li>
+            <li><a href="#features">Predictive Telemetry</a></li>
+            <li><a href="#pricing">Multi-Cloud Failover</a></li>
+            <li><a href="#about">Zero-Trust Perimeter</a></li>
+            <li><a href="#pricing">Release Changelog</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: Resources -->
+        <div class="footer-links-col">
+          <h4 class="col-title">Developers</h4>
+          <ul class="col-list">
+            <li><a href="#faq">CLI Documentation</a></li>
+            <li><a href="#faq">REST & GraphQL APIs</a></li>
+            <li><a href="#faq">Architecture Whitepaper</a></li>
+            <li><a href="#stats">Global Status Dashboard</a></li>
+            <li><a href="#testimonials">Case Studies</a></li>
+            <li><a href="#faq">Open Source SDKs</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: Company -->
+        <div class="footer-links-col">
+          <h4 class="col-title">Organization</h4>
+          <ul class="col-list">
+            <li><a href="#about">About NovaEngine</a></li>
+            <li><a href="#contact">Careers <span class="mini-tag">We're hiring</span></a></li>
+            <li><a href="#contact">Security & Trust</a></li>
+            <li><a href="#contact">Privacy Policy</a></li>
+            <li><a href="#contact">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> NovaEngine Inc. All rights reserved. Crafted for high-impact developers.
+        </p>
+        <div class="footer-meta">
+          <span class="status-indicator">
+            <span class="status-dot"></span>
+            Global Mesh Operational · 34 Regions Active
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       BACK-TO-TOP BUTTON
+       ======================================================== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top of page" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================================
+       NOTIFICATION TOAST MODAL
+       ======================================================== -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message">
+      <h4 class="toast-title" id="toast-title">Message Sent!</h4>
+      <p class="toast-desc" id="toast-desc">Thank you. A principal architect will follow up shortly.</p>
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Close notification">&times;</button>
+  </div>
+
+  <!-- JavaScript Script Link -->
+  <script src="script.js"></script>
+</body>
+</html>
