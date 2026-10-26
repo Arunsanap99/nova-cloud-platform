@@ -1,8 +1,19 @@
 # NovaEngine — Autonomous Multi-Cloud Platform
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Website-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://nova-cloud-platform-topaz.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Arunsanap99/nova-cloud-platform)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
+
+> 🌐 **Live Demo:** [https://nova-cloud-platform-topaz.vercel.app/](https://nova-cloud-platform-topaz.vercel.app/)
+
 A clean, modern SaaS landing page designed for **NovaEngine**, an autonomous multi-cloud workspace and operating system for modern engineering teams.
 
-![NovaEngine Preview](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80)
+---
+
+## 🔗 Quick Links
+
+- 🚀 **Live Production Demo:** [nova-cloud-platform-topaz.vercel.app](https://nova-cloud-platform-topaz.vercel.app/)
+- 💻 **Source Code Repository:** [github.com/Arunsanap99/nova-cloud-platform](https://github.com/Arunsanap99/nova-cloud-platform)
 
 ---
 
@@ -23,13 +34,12 @@ A clean, modern SaaS landing page designed for **NovaEngine**, an autonomous mul
 - **HTML5**: Semantic tags, OpenGraph meta properties, responsive viewport configuration.
 - **CSS3**: Vanilla CSS with custom properties (CSS variables), CSS Grid, Flexbox, glassmorphism, and responsive breakpoints.
 - **JavaScript**: Modular Vanilla JS (ES6+) for theme persistence, card spotlights, animated counters, FAQ accordions, and form validation.
+- **Hosting**: Deployed on [Vercel](https://vercel.com) with global edge delivery and continuous deployment.
 - **Icons & Fonts**: Font Awesome 6, Google Fonts (Plus Jakarta Sans, Inter, JetBrains Mono).
 
 ---
 
-## 🚀 Quick Start
-
-To run the project locally:
+## 🚀 Quick Start (Local Development)
 
 1. **Clone the repository:**
    ```bash
@@ -39,15 +49,6 @@ To run the project locally:
 
 2. **Open in browser:**
    - Double click `index.html` or open with Live Server in VS Code.
-
----
-
-## 🌐 Deployment
-
-This static landing page can be deployed instantly for free on:
-- **GitHub Pages**: Go to *Settings* -> *Pages* -> Select `main` branch -> Save.
-- **Vercel**: Import repository on [vercel.com](https://vercel.com).
-- **Netlify**: Drag and drop the folder or connect repository on [netlify.com](https://netlify.com).
 
 ---
 
